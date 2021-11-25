@@ -1,0 +1,13 @@
+.data
+A F 13,8
+B F 9,2
+.code
+start :
+CMPF A B
+PJNZF Func 16
+SUBF A B
+OUTF A
+END start
+Func :
+MULF A B
+RET
